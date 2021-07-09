@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/hdntecnologiabr/react-chakra-template">
-    <img src=".github/hdn-logo.png" alt="HDN Digital logo" width="300" />
+    <img src="https://github.com/hdntecnologiabr/template-hdnchakranext/raw/main/.github/hdn-logo.png" alt="HDN Digital logo" width="300" />
   </a>
 </p>
 
