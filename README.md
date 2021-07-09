@@ -55,10 +55,18 @@ To start using the template, please follow these steps:
 
 ```sh
 cd myprojectname && yarn && code .
+```
 
-#or
+2. Start project on localhost:3000
 
-cd myprojectname && npm i && code .
+```sh
+yarn start
+```
+
+3. Start storybook on localhost:6006
+
+```sh
+yarn storybook
 ```
 
 <br>
