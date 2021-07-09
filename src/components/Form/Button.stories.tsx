@@ -18,4 +18,5 @@ export const Button = Template.bind({});
 Button.args = {
   disabled: false,
   children: 'Button Text',
+  colorScheme: 'secondary',
 };

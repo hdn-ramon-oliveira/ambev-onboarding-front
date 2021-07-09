@@ -1,18 +1,26 @@
 import React from 'react';
 
-import { Flex, OrderedList, ListItem } from '@chakra-ui/react';
+import { Flex, Text, Heading } from '@chakra-ui/react';
 
 export function Home() {
   return (
-    <Flex direction="column" justify="center" align="center" w="100%" h="100%">
-      Esse é um template da HDN contendo:
-      <OrderedList>
-        <ListItem>React com Javascript</ListItem>
-        <ListItem>Context API</ListItem>
-        <ListItem>ChakraUI</ListItem>
-        <ListItem>Eslint + Prettier + Editor config</ListItem>
-        <ListItem>Husky + Lint staged + Commitlint</ListItem>
-      </OrderedList>
+    <Flex w="100vw" h="100vh">
+      <Flex
+        display="flex"
+        flexDir="column"
+        w="100vw"
+        alignItems="flex-start"
+        justifyContent="center"
+        px="50px"
+      >
+        <Text color="primary.500">Seja bem vinda, Carol.</Text>
+
+        <Heading color="primary.500">
+          Sua jornada de
+          <br />
+          integração começou!
+        </Heading>
+      </Flex>
     </Flex>
   );
 }

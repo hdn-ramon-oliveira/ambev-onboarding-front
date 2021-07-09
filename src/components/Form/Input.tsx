@@ -21,7 +21,7 @@ import {
 export interface InputProps extends ChakraInputProps {
   name: string;
   label?: string;
-  icon: ReactElement;
+  icon?: ReactElement;
   error?: FieldError;
 }
 
