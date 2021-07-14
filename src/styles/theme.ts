@@ -7,19 +7,19 @@ import '../assets/fonts/index.css';
 export const theme = extendTheme({
   colors: {
     primary: {
+      100: '#ffffff',
+      200: '#f9f9f9',
+      300: '#dcdcdc',
+      400: '#adaeb6',
       500: '#54565a',
-      600: '#adaeb6',
-      700: '#dcdcdc',
-      800: '#f9f9f9',
-      900: '#ffffff',
     },
     secondary: {
+      200: '#f6dbcd',
       500: '#ff6a13',
-      700: '#f6dbcd',
     },
     tertiary: {
+      200: '#fbf4e1',
       500: '#ffc72c',
-      700: '#fbf4e1',
     },
   },
   fonts: {
@@ -40,7 +40,7 @@ export const theme = extendTheme({
       },
       button: {
         bg: 'secondary.500',
-        color: 'white',
+        color: 'primary.100',
       },
       input: {
         _placeholder: {
