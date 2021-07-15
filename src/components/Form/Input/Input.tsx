@@ -1,4 +1,5 @@
 /* eslint-disable react/no-children-prop */
+
 import React, {
   ReactElement,
   forwardRef,
@@ -18,6 +19,8 @@ import {
   InputProps as ChakraInputProps,
 } from '@chakra-ui/react';
 
+import { theme } from './inputStyles';
+
 export interface InputProps extends ChakraInputProps {
   name: string;
   label?: string;
@@ -32,7 +35,7 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   const [isActiveIcon, setIsActiveIcon] = useState(false);
 
   return (
-    <FormControl isInvalid={!!error}>
+    <FormControl theme={theme} isInvalid={!!error}>
       {!!label && <FormLabel htmlFor={name}>{label}</FormLabel>}
 
       {icon ? (

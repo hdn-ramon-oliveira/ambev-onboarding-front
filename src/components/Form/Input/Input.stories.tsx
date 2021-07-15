@@ -1,7 +1,5 @@
 import React from 'react';
-import { FaUser } from 'react-icons/fa';
 
-import { Icon } from '@chakra-ui/react';
 import { Story } from '@storybook/react';
 
 import { Input as HDNInput, InputProps as HDNInputProps } from './Input';
@@ -12,11 +10,6 @@ export default {
   argTypes: {
     name: { control: 'text' },
     label: { control: 'text' },
-    error: { control: 'object', raw: true },
-    icon: {
-      options: ['FaLock', 'FaUser'],
-      control: 'select',
-    },
   },
 };
 
@@ -31,8 +24,6 @@ Default.args = {
   borderColor: 'primary.400',
   borderWidth: 'thin',
   borderRadius: '4px',
-  name: 'username',
-  label: 'Usuário',
 };
 
 export const Light = Template.bind({});
@@ -42,6 +33,4 @@ Light.args = {
   borderWidth: 'thin',
   borderRadius: '4px',
   borderColor: 'primary.300',
-  name: 'username',
-  label: 'Usuário',
 };
