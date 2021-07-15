@@ -48,47 +48,15 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
           <ChakraInput
             id={name}
             name={name}
-            color="gray.900"
-            borderColor="gray.300"
-            borderWidth="2px"
-            _placeholder={{
-              color: 'gray.300',
-            }}
-            _hover={{
-              borderColor: 'gray.400',
-            }}
-            _focus={{
-              borderColor: 'primary.500',
-            }}
             onFocus={() => setIsActiveIcon(true)}
             onBlur={() => setIsActiveIcon(false)}
-            variant="outline"
             size="lg"
             ref={ref}
             {...rest}
           />
         </InputGroup>
       ) : (
-        <ChakraInput
-          id={name}
-          name={name}
-          color="gray.900"
-          borderColor="gray.300"
-          borderWidth="2px"
-          _placeholder={{
-            color: 'gray.300',
-          }}
-          _hover={{
-            borderColor: 'gray.400',
-          }}
-          _focus={{
-            borderColor: 'primary.500',
-          }}
-          variant="outline"
-          size="lg"
-          ref={ref}
-          {...rest}
-        />
+        <ChakraInput id={name} name={name} size="lg" ref={ref} {...rest} />
       )}
 
       {!!error && <FormErrorMessage>{error.message}</FormErrorMessage>}

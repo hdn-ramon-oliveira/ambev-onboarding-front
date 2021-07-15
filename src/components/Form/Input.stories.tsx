@@ -21,16 +21,27 @@ export default {
 };
 
 const Template: Story<HDNInputProps> = args => {
-  return <HDNInput {...args} icon={<Icon as={FaUser} />} />;
+  return <HDNInput {...args} />;
 };
 
-export const Input = Template.bind({});
-Input.args = {
+export const Default = Template.bind({});
+Default.args = {
+  bg: 'transparent',
+  color: 'primary.500',
+  borderColor: 'primary.400',
+  borderWidth: 'thin',
+  borderRadius: '4px',
   name: 'username',
   label: 'Usuário',
-  error: {
-    type: 'validate',
-    message: 'Nome de usuário inválido',
-  },
-  icon: <Icon as={FaUser} />,
+};
+
+export const Light = Template.bind({});
+Light.args = {
+  color: 'primary.100',
+  bg: 'transparent',
+  borderWidth: 'thin',
+  borderRadius: '4px',
+  borderColor: 'primary.300',
+  name: 'username',
+  label: 'Usuário',
 };

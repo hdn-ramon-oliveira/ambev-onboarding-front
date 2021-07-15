@@ -29,6 +29,7 @@ export function Login() {
         <Text color="white">Informe seu CPF para seguir Jornada.</Text>
 
         <Input
+          variant="light"
           w="auto"
           id="login"
           name="login"

@@ -49,6 +49,46 @@ export const theme = extendTheme({
         },
       },
     },
+    Input: {
+      baseStyle: {
+        field: {
+          bg: 'transparent',
+          color: 'primary.500',
+          borderColor: 'primary.400',
+          borderWidth: 'thin',
+          borderRadius: '4px',
+          _placeholder: {
+            color: 'primary.100',
+          },
+          _hover: {
+            borderColor: 'gray.100',
+          },
+          _focus: {
+            borderColor: 'primary.100',
+          },
+        },
+      },
+      variants: {
+        light: {
+          field: {
+            color: 'primary.100',
+            bg: 'transparent',
+            borderWidth: 'thin',
+            borderRadius: '4px',
+            borderColor: 'primary.300',
+            _placeholder: {
+              color: 'primary.100',
+            },
+            _hover: {
+              borderColor: 'gray.100',
+            },
+            _focus: {
+              borderColor: 'primary.100',
+            },
+          },
+        },
+      },
+    },
   },
   styles: {
     global: {
@@ -61,7 +101,7 @@ export const theme = extendTheme({
       },
       input: {
         _placeholder: {
-          color: 'gray.100',
+          color: 'primary.400',
         },
       },
       _disabled: {
