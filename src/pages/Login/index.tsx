@@ -4,8 +4,8 @@ import { useHistory } from 'react-router-dom';
 
 import { Flex, Heading, Text } from '@chakra-ui/react';
 
+import { Input } from '~/components';
 import { Button } from '~/components/Form/Button';
-import { Input } from '~/components/Form/Input';
 
 export function Login() {
   const history = useHistory();
@@ -29,8 +29,7 @@ export function Login() {
         <Text color="white">Informe seu CPF para seguir Jornada.</Text>
 
         <Input
-          color="red"
-          variant="unstyled"
+          variant="light"
           w="auto"
           id="login"
           name="login"
