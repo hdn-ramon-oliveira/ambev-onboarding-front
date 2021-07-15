@@ -4,6 +4,8 @@ import '../assets/fonts/Moderat-Bold.otf';
 import '../assets/fonts/Moderat-Regular.otf';
 import '../assets/fonts/index.css';
 
+// import { Button } from '../components/Form/Button/buttonStyles';
+
 export const theme = extendTheme({
   colors: {
     primary: {

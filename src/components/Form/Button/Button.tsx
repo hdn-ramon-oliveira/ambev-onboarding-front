@@ -5,7 +5,7 @@ import {
   ButtonProps as ChakraButtonProps,
 } from '@chakra-ui/react';
 
-import { theme } from './buttonStyles';
+import { baseStyle } from './buttonStyles';
 
 export interface ButtonProps extends ChakraButtonProps {
   children: ReactNode;
@@ -13,7 +13,7 @@ export interface ButtonProps extends ChakraButtonProps {
 
 export function Button({ children, ...rest }: ButtonProps) {
   return (
-    <ChakraButton theme={theme} {...rest}>
+    <ChakraButton {...baseStyle} {...rest}>
       {children}
     </ChakraButton>
   );
