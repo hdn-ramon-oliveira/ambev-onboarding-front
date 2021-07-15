@@ -29,6 +29,8 @@ export function Login() {
         <Text color="white">Informe seu CPF para seguir Jornada.</Text>
 
         <Input
+          color="red"
+          variant="unstyled"
           w="auto"
           id="login"
           name="login"
@@ -37,11 +39,7 @@ export function Login() {
           isRequired
         />
 
-        <Button
-          mb="6"
-          onClick={() => history.push('/home')}
-          colorScheme="secondary"
-        >
+        <Button mb="6" onClick={() => history.push('/home')}>
           Entrar
         </Button>
       </Flex>
