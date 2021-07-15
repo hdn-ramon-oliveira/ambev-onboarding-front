@@ -16,14 +16,14 @@ export default {
 
 const Template: Story<HDNButtonProps> = args => <HDNButton {...args} />;
 
-export const Default: Story<HDNButtonProps> = Template.bind({});
+export const Default = Template.bind({});
 Default.args = {
   disabled: false,
   children: 'Button Text',
   bg: 'secondary.500',
   color: 'primary.100',
   fontSize: '14px',
-  fontWeight: '700',
+  fontWeight: 'bold',
   lineHeight: '20px',
   padding: '16px 32px',
 };
@@ -34,11 +34,9 @@ Outline.args = {
   children: 'Button Text',
   bg: 'primary.100',
   color: 'secondary.500',
-  borderWidth: '1px',
-  borderStyle: 'solid',
-  borderColor: 'secondary.500',
+  border: '1px solid',
   fontSize: '14px',
-  fontWeight: '700',
+  fontWeight: 'bold',
   lineHeight: '20px',
   padding: '16px 32px',
 };
