@@ -23,6 +23,11 @@ export const theme = extendTheme({
       200: '#fbf4e1',
       500: '#ffc72c',
     },
+    error: {
+      100: '#E61705',
+      300: '#FF1805',
+      500: '#400601',
+    },
   },
   fonts: {
     heading: 'Moderat Bold',
