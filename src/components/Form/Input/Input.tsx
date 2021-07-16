@@ -15,7 +15,7 @@ import {
   InputProps as ChakraInputProps,
 } from '@chakra-ui/react';
 
-import { theme } from './inputStyles';
+import { baseStyle } from './inputStyles';
 
 export interface InputProps extends ChakraInputProps {
   name: string;
@@ -29,10 +29,17 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   ref,
 ) => {
   return (
-    <FormControl theme={theme} isInvalid={!!error}>
+    <FormControl isInvalid={!!error}>
       {!!label && <FormLabel htmlFor={name}>{label}</FormLabel>}
 
-      <ChakraInput id={name} name={name} size="lg" ref={ref} {...rest} />
+      <ChakraInput
+        {...baseStyle}
+        id={name}
+        name={name}
+        size="lg"
+        ref={ref}
+        {...rest}
+      />
       {!!error && <FormErrorMessage>{error.message}</FormErrorMessage>}
     </FormControl>
   );
