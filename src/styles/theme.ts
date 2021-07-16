@@ -61,7 +61,7 @@ export const theme = extendTheme({
       },
       input: {
         _placeholder: {
-          color: 'gray.100',
+          color: 'primary.400',
         },
       },
       _disabled: {
