@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 import { Flex, Heading, Text } from '@chakra-ui/react';
 
-import { Input, Button } from '~/components';
+import { Input, Button, Select } from '~/components';
 import { outline } from '~/components/Form/Input/inputStyles';
 
 export function Login() {
@@ -28,9 +28,10 @@ export function Login() {
 
         <Text color="white">Informe seu CPF para seguir Jornada.</Text>
 
+        <Select w="auto" placeholder="Select option" />
+
         <Input
           {...outline}
-          variant="light"
           w="auto"
           id="login"
           name="login"
